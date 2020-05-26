@@ -17,6 +17,9 @@ let $body,
 
 $(document).ready(function () {
     $body = $('body');
-    
+	$('.slider').slick({
+		nextArrow: '<button class="slick-arrow slick-next"><img src="images/arrow.png" alt="next arrow" style="transform: rotate(180deg);"></button>',
+		prevArrow: '<button class="slick-arrow slick-prev"><img src="images/arrow.png" alt="next arrow"></button>',
+	});    
 });
 
