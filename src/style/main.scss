@@ -2,8 +2,25 @@
 @import '_fonts';
 @import '_ui';
 
+/*__Inspect__*/
+
+.insp-1 {
+	background-color: rgba(250, 50, 50, 0.3);
+    box-shadow: inset 0px 0px 4px 2px  rgba(200, 50, 50, 0.6);	
+}
+
+.insp-2 {
+	background-color: rgba(50, 250, 50, 0.3);
+    box-shadow: inset 0px 0px 4px 2px  rgba(50, 200, 50, 0.6);	
+}
+
+.insp-3 {
+	background-color: rgba(50, 50, 250, 0.3);
+    box-shadow: inset 0px 0px 4px 2px  rgba(50, 50, 200, 0.6);	
+}
 
 
+/*__Basic__*/
 
 body {
 	font-family: FuturaBookC;
@@ -14,16 +31,228 @@ body {
 
   min-width: 320px;
 
-  color: #000000;
+  color: #525466;
   background: #fff;
 }
 
+a {
+  text-decoration: none;
+}
 
+.container {
+  width: 1185px;
+  margin: 0 auto;
+}
 
+.v-hidden:not(:focus):not(:active),
+input[type="checkbox"].v-hidden,
+input[type="radio"].v-hidden {
+  position: absolute;
 
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
 
+  white-space: nowrap;
 
+  border: 0;
 
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+}
+
+.button {
+	outline: none;
+	border: none;
+
+	width: 260px;
+	min-height: 60px;
+	background-color: #FD9191;
+
+	vertical-align: middle;
+	text-align: center;
+	font-family: FuturaBookC, serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 32px;
+
+	border-radius: 100px;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+/*__Header__*/
+
+.header__wrapper {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 44px;
+
+	align-items: flex-end;
+	margin-bottom: 72px;
+}
+
+.main-logo {
+	display: block;
+
+	font-family: Futura;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 26px;
+	line-height: 35px;	
+	color: #71A5F4;
+	margin-right: 80px;
+	min-width: 155px;
+}
+
+.main-logo span {
+	color: #344953;
+}
+
+.nav-services__list,
+.nav-main__list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+	margin-right: 58px;
+	flex-grow: 1;
+}
+
+.nav-services__item:not(:last-child) {
+	// margin-right: 54px;
+}
+
+.nav-services__item a,
+.nav-main__item a,
+.main-menu__contacts a {
+	font: inherit;
+	color: #525466;
+
+	font-family: FuturaBookC, serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 29px;
+}
+
+.header__phone-number {
+	font: inherit;
+	color: #525466;
+
+	// white-space: nowrap;
+}
+
+.main-menu {
+	margin: 0 0;
+	position: absolute;
+	background-color: #ffffff;
+	z-index: 10;
+}
+
+.main-menu-button {
+	display: inline-block;
+	position: relative;
+
+	width: 20px;
+	height: 20px;
+
+	cursor: pointer;
+}
+
+.main-menu-button:before,
+.main-menu-button:after {
+	position: absolute;
+	content: "";
+
+	right: 0;
+	bottom: 50%;
+
+	width: 20px;
+	height: 2px;
+	background-color: #71A5F4;
+
+	transform: rotate(45deg);
+}
+
+.main-menu-button:after {
+	transform: rotate(-45deg);
+}
+
+.main-menu__columns-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.main-menu .nav-services__list,
+.nav-main__list,
+.main-menu__contacts {
+	margin: 0;
+	padding: 0;
+	
+	display: flex;
+	flex-direction: column;
+}
+
+.main-menu .nav-services__item,
+.nav-main__item {
+	margin-bottom: 35px;
+}
+
+.main-menu__contacts .phone-number {
+	margin-bottom: 20px;
+}
+
+.main-menu__e-mail {
+	margin-bottom: 40px;
+}
+
+.social__list {
+	margin: 0;
+	padding: 0;
+
+	display: flex;
+	justify-content: flex-start;
+	list-style: none;
+}
+
+.social__link {
+	position: relative;
+}
+
+.social__item {
+	margin-right: 52px;
+}
+
+.social__facebook:before,
+.social__instagram:before {
+	position: absolute;
+	content: "";
+
+	width: 32px;
+	height: 32px;
+	left: 0;
+	top: 0;
+
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+.social__facebook:before {
+	background-image: url(../img/facebook.svg);
+}
+
+.social__instagram:before {
+	background-image: url(../img/instagram.svg);
+}
 
 
 @import '_media';
