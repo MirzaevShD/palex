@@ -41,7 +41,7 @@ var path = {
         js: [
 
             'node_modules/jquery/dist/jquery.min.js',
-            //'node_modules/slick-carousel/slick/slick.min.js',
+            'node_modules/slick-carousel/slick/slick.min.js',
             //'src/libs/mmenu/jquery.mmenu.all.js',
             //'src/libs/mhead/jquery.mhead.js',
             // 'node_modules/object-fit-images/dist/ofi.min.js',
