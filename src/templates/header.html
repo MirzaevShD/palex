@@ -22,24 +22,53 @@
 <header class="header">
     <div class="container">
         <span class="main-logo">Palex <span>Web</span></span>
-        <ul class="header__services-list">
-            <li class="header__services-item"><a href="">Создание сайтов</a></li>
-            <li class="header__services-item"><a href="">Продвижение</a></li>
-            <li class="header__services-item"><a href="">Контекстная реклама</a></li>
-            <li class="header__services-item"><a href="">Соцсети</a></li>
-            <li class="header__services-item"><a href="">Портфолио</a></li>
-        </ul>
-        <a href="tel:74996495357" class="phone-number">+7(499) 649-53-57</a>
+        <nav class="nav-services">
+            <ul class="header__services-list">
+                <li class="header__services-item"><a href="">Создание сайтов</a></li>
+                <li class="header__services-item"><a href="">Продвижение</a></li>
+                <li class="header__services-item"><a href="">Контекстная реклама</a></li>
+                <li class="header__services-item"><a href="">Соцсети</a></li>
+                <li class="header__services-item"><a href="">Портфолио</a></li>
+            </ul>
+        </nav>
+        <a href="tel:74996495357" class="header__phone-number phone-number">+7(499) 649-53-57</a>
         <span class="main-menu-button"></span>
         <div class="main-menu hidden">
-            <nav class="main-nav">
-                <ul class="main-nav__list">
-                    <li class="main-nav__item"><a href="" class="main-nav__link">Главная</a></li>
-                    <li class="main-nav__item"><a href="" class="main-nav__link">О компании</a></li>
-                    <li class="main-nav__item"><a href="" class="main-nav__link">Портфолио</a></li>
-                    <li class="main-nav__item"><a href="" class="main-nav__link">Контакты</a></li>
-                </ul>
-            </nav>
+            <div class="main-menu__columns-container columns">
+                <div class="main-menu__column">
+                    <nav class="nav-main">
+                        <ul class="nav-main__list">
+                            <li class="nav-main__item"><a href="" class="nav-main__link">Главная</a></li>
+                            <li class="nav-main__item"><a href="" class="nav-main__link">О компании</a></li>
+                            <li class="nav-main__item"><a href="" class="nav-main__link">Портфолио</a></li>
+                            <li class="nav-main__item"><a href="" class="nav-main__link">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="main-menu__column">
+                    <nav class="nav-services">
+                        <ul class="header__services-list">
+                            <li class="header__services-item"><a href="">Создание сайтов</a></li>
+                            <li class="header__services-item"><a href="">Продвижение</a></li>
+                            <li class="header__services-item"><a href="">Контекстная реклама</a></li>
+                            <li class="header__services-item"><a href="">Соцсети</a></li>
+                            <li class="header__services-item"><a href="">Портфолио</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="main-menu__column">
+                    <a href="tel:79775443051" class="main-menu__phone-number phone-number">+7(977) 544-30-51</a>
+                    <a href="tel:74996495357" class="main-menu__phone-number phone-number">+7(499) 649-53-57</a>
+                    <a href="mailto:email@info.com" class="main-menu__e-mail">email@info.com</a>
+                    <ul class="social__list">
+                        <li class="social__item"><a href="#" class="social__link social__facebook"></a></li>
+                        <li class="social__item"><a href="#" class="social__link social__instagram"></a></li>
+                    </ul>
+                </div>
+                <div class="main-menu__column">
+                    <button class="button consultation-button">Бесплатная консультация</button>
+                </div>
+            </div>
         </div>
     </div>
 </header>
