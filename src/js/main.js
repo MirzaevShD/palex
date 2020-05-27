@@ -18,8 +18,10 @@ let $body,
 $(document).ready(function () {
     $body = $('body');
 	$('.slider').slick({
-		nextArrow: '<button class="slick-arrow slick-next"><img src="images/arrow.png" alt="next arrow" style="transform: rotate(180deg);"></button>',
-		prevArrow: '<button class="slick-arrow slick-prev"><img src="images/arrow.png" alt="next arrow"></button>',
+        centerMode: true,
+        variableWidth: true,
+		nextArrow: $('.portfolio__next-slide-button'),
+		prevArrow: $('.portfolio__prev-slide-button')
 	});    
 });
 
@@ -41,73 +43,73 @@ for (var i = 0; i < workProcessControls.length; i++) {
 }
 
 
-leftMenu();
+// leftMenu();
 
-    function leftMenu () {
-        let leftNav = $('.main-menu'),
-            leftNavIsOpen = leftNav.hasClass('open'),
-            openClass = 'main-menu-open',
-            opening = false,
-            transitionTime = 500,
-            timeout;
-
-
-
-        $body.on('click touch', '.js-main-menu-trigger', function (e) {
-            e.preventDefault();
-            navToggle();
-        });
+//     function leftMenu () {
+//         let leftNav = $('.main-menu'),
+//             leftNavIsOpen = leftNav.hasClass('open'),
+//             openClass = 'main-menu-open',
+//             opening = false,
+//             transitionTime = 500,
+//             timeout;
 
 
-        $body.on('click touch', function (event) {
-            let obj = $(event.target);
 
-            if ( !opening && leftNav.hasClass('open') && !obj.closest('.main-menu').length && !obj.closest('.fancybox-container').length ) {
-                navClose();
-            };
-        });
+//         $body.on('click touch', '.js-main-menu-trigger', function (e) {
+//             e.preventDefault();
+//             navToggle();
+//         });
 
-        $body.on('keydown', function(e) {
-            if ( !opening && leftNavIsOpen && (e.keyCode  === 27)) { // escape key maps to keycode '27'
-                navToggle()
-            };
-        });
 
-        function navToggle() {
-            if ( opening ) {
-                return 
-            }
+//         $body.on('click touch', function (event) {
+//             let obj = $(event.target);
 
-            opening = true;
+//             if ( !opening && leftNav.hasClass('open') && !obj.closest('.main-menu').length && !obj.closest('.fancybox-container').length ) {
+//                 navClose();
+//             };
+//         });
 
-            leftNavIsOpen = leftNav.hasClass('open');
+//         $body.on('keydown', function(e) {
+//             if ( !opening && leftNavIsOpen && (e.keyCode  === 27)) { // escape key maps to keycode '27'
+//                 navToggle()
+//             };
+//         });
 
-            leftNav.toggleClass('open', !leftNavIsOpen);
+//         function navToggle() {
+//             if ( opening ) {
+//                 return 
+//             }
 
-            if (!leftNavIsOpen) {
-                $body.toggleClass(openClass, true);
-            }
+//             opening = true;
+
+//             leftNavIsOpen = leftNav.hasClass('open');
+
+//             leftNav.toggleClass('open', !leftNavIsOpen);
+
+//             if (!leftNavIsOpen) {
+//                 $body.toggleClass(openClass, true);
+//             }
            
-            if ( timeout ) {
-                clearTimeout(timeout)
-            }
+//             if ( timeout ) {
+//                 clearTimeout(timeout)
+//             }
 
-            timeout = setTimeout(function() {
-                leftNavIsOpen = leftNav.hasClass('open');
+//             timeout = setTimeout(function() {
+//                 leftNavIsOpen = leftNav.hasClass('open');
 
-                if (!leftNavIsOpen) {
-                    $body.toggleClass(openClass, false);
-                }
-                opening = false;
-            }, transitionTime)
+//                 if (!leftNavIsOpen) {
+//                     $body.toggleClass(openClass, false);
+//                 }
+//                 opening = false;
+//             }, transitionTime)
             
-        };
+//         };
 
-        $('.main-menu__columns-container').on('scroll',function(e) {
-            if ( $('.main-menu__columns-container').scrollTop() > 10 ) {
-                $body.addClass('main-menu-scroll');
-            } else {
-                $body.removeClass('main-menu-scroll');
-            }
-        });
-    };
+//         $('.main-menu__columns-container').on('scroll',function(e) {
+//             if ( $('.main-menu__columns-container').scrollTop() > 10 ) {
+//                 $body.addClass('main-menu-scroll');
+//             } else {
+//                 $body.removeClass('main-menu-scroll');
+//             }
+//         });
+//     };

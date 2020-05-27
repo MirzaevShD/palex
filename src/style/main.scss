@@ -22,6 +22,14 @@
 
 /*__Basic__*/
 
+html {
+	box-sizing: border-box;
+}
+
+*, *::after, *::before {
+	box-sizing: inherit;
+}
+
 body {
 	font-family: FuturaBookC;
 	font-style: normal;
@@ -83,6 +91,11 @@ input[type="radio"].v-hidden {
 	border-radius: 100px;
 	color: #ffffff;
 	cursor: pointer;
+}
+
+.columns {
+	display: flex;
+	justify-content: space-between;
 }
 
 /*__Header__*/
@@ -190,11 +203,6 @@ input[type="radio"].v-hidden {
 
 .main-menu-button::after {
 	transform: rotate(-45deg);
-}
-
-.main-menu__columns-container {
-	display: flex;
-	justify-content: space-between;
 }
 
 .main-menu .nav-services__list,
@@ -482,16 +490,22 @@ input[type="radio"].v-hidden {
 /*__Main-similar-styles__*/
 
 .section-title {
+	margin: 0;
+	padding: 0;
+
 	font-family: Futura;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 24px;
-	line-height: 52px;
+	line-height: 26px;
 
 	margin-bottom: 22px;
 }
 
 .section-subtitle {
+	margin: 0;
+	padding: 0;
+
 	font-family: Futura;
 	font-style: normal;
 	font-weight: bold;
@@ -503,6 +517,12 @@ input[type="radio"].v-hidden {
 
 
 /*__Intro__*/
+
+.intro-wrapper {
+	background-image: url(../img/intro-bg.svg);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
 
 .intro__columns {
 	margin: 0;
@@ -521,6 +541,11 @@ input[type="radio"].v-hidden {
 	width: 50%;
 
 	margin-bottom: 130px;
+}
+
+.intro__columns-right {
+	width: 647px;
+	height: 476px;
 }
 
 .intro__title {
@@ -576,7 +601,8 @@ input[type="radio"].v-hidden {
 	position: relative;
 	list-style: none;
 
-	width: 500px;
+	width: 450px;
+	margin-right: 100px;
 }
 
 .work-process__slides-item {
@@ -585,6 +611,7 @@ input[type="radio"].v-hidden {
 	left: 0;
 	top: 0;
 
+	width: 350px;
 	display: none;
 }
 
@@ -693,6 +720,361 @@ input[type="radio"].v-hidden {
 
 /*__ConsultationRequest__*/
 
+.consultation-request {
+	padding-top: 145px;
+	padding-bottom: 120px;
 
+	background-color: #5665EB;;
+}
+
+.consultation-request__title {
+	color: rgba(255, 255, 255, 0.68);
+}
+
+.consultation-request__subtitle {
+	color: #ffffff;
+}
+
+.consultation-request__text {
+	font-family: FuturaBookC;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 29px;
+
+	color: #FFFFFF;	
+
+	margin-bottom: 52px;
+}
+
+.consultation-request__columns-left {
+	width: 600px;
+	// margin-right: 80px;
+}
+
+.consultation-request__columns-right img {
+	margin-top: 20px;
+	// width: 100%;
+}
+
+.consultation-request__form-wrapper {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: -15px 0 0 0;
+}
+
+.consultation-request__form-wrapper > * {
+	margin-top: 15px;
+}
+
+.consultation-request__form-wrapper input {
+	border: none;
+	outline: none;
+
+	width: 290px;
+	min-height: 60px;
+
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 100px;	
+	padding-left: 35px;
+
+	color: #ffffff;
+}
+
+.consultation-request__form-wrapper input::placeholder {
+	color: #ffffff;
+}
+
+.consultation-request__form-wrapper input:valid {
+	border: none;
+}
+
+.consultation-request__form-wrapper input:invalid {
+	border: 2px solid rgba(250, 20, 20, 0.6);
+}
+
+.consultation-request__form-wrapper button {
+	width: 290px;
+}
+
+/*__Portfolio__*/
+
+.portfolio {
+	padding-top: 175px;	
+	padding-bottom: 160px;
+}
+
+.portfolio__title {
+	color: #71A5F4;
+}
+
+.portfolio__subtitle {
+	margin-bottom: 92px;
+	color: #000000;
+}
+
+.slider__item {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	width: 1015px;
+	height: 450px;
+
+	padding-top: 62px;
+	padding-left: 55px;
+
+	box-shadow: 0px 12px 40px rgba(74, 78, 84, 0.13);
+	border-radius: 12px;
+}
+
+.portfolio__item-text {
+	width: 345px;
+}
+
+.slider-container {
+	padding-top: 92px;
+}
+
+.slider-controls {
+	position: relative;
+}
+
+.slick-arrow {
+	border: none;
+	outline: none;
+	position: absolute;
+	top: 0;
+	z-index: 5;
+	cursor: pointer;
+	transform: translateY(-50%);
+
+	text-align: center;
+	vertical-align: middle;
+	
+	width: 58px;
+	height: 58px;
+
+	background-color: #5665EB;
+	border-radius: 4px;	
+}
+
+.portfolio__next-slide-button {
+	right: 0;
+}
+
+.portfolio__prev-slide-button {
+	right: 68px;
+}
+
+/*__CalculationRequest__*/
+
+.calculation-request {
+	background-color: #FD9191;
+	padding-top: 135px;
+	padding-bottom: 120px;
+
+	color: rgba(255, 255, 255, 0.68);
+}
+
+.calculation-request__subtitle {
+	margin-bottom: 58px;
+	color: #FFFFFF;
+}
+
+.calculation-request__columns-left fieldset {
+	border: none;
+}
+
+.calculation-request__columns-left legend {
+	font-family: Futura;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 22px;
+}
+
+.services-radio-group,
+.extra-functions-checkbox-group {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	flex-direction: row;
+
+	margin: -10px 0 75px 0;
+} 
+
+.extra-functions-checkbox-group {
+	justify-content: flex-start;
+}
+
+.services-radio-group label,
+.extra-functions-checkbox-group label {
+	display: block;
+	cursor: pointer;
+	padding: 12px 25px;
+
+	background-color: rgba(255, 255, 255, 0.1);
+	border-radius: 4px;
+
+	font-family: FuturaBookC;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 22px;
+
+	text-align: center;
+	vertical-align: middle;
+	margin-top: 10px;
+}
+
+.extra-functions-checkbox-group label {
+	position: relative;
+	margin-right: 14px;
+	padding-left: 46px;
+}
+
+.extra-functions-checkbox-group label::before {
+	content: "";
+	display: inline-block;
+	background-color: transparent;
+	position: absolute;
+
+	top: 50%;
+	left: 15px;
+
+	width: 16px;
+	height: 16px;
+
+	border: 1px solid #FFFFFF;
+	// box-sizing: border-box;
+	border-radius: 2px;
+
+	transform: translateY(-50%);
+}
+
+.extra-functions-checkbox-group label::after {
+	display: none;
+	content: "";
+	position: absolute;
+	
+	top: 50%;
+	left: 15px;
+
+	width: 12px;
+	height: 12px;
+
+	background-image: url(../img/check-mark.png);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+
+	transform: translateY(-50%);
+}
+
+.services-radio-group input:checked + label {
+	background-color: #FFFFFF;
+	color: #FD9191;	
+}
+
+.extra-functions-checkbox-group input:checked + label::after {
+	display: inline-block;
+}
+
+.services-radio-group label:hover,
+.extra-functions-checkbox-group label:hover {
+	background-color: #FFFFFF;
+	color: #FD9191;
+}
+
+.extra-functions-checkbox-group label:hover::before {
+	border-color: #FD9191;
+}
+
+.submit-container {
+	width: 445px;
+	min-height: 525px;
+
+	background: #FFFFFF;
+	border-radius: 12px;
+
+	margin-top: -100px;
+	padding: 80px 80px 50px 75px;
+}
+
+.total {
+	position: relative;
+	font-family: Futura;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 52px;
+	line-height: 52px;
+
+	color: #71A5F4;	
+
+	margin-bottom: 25px;
+}
+
+.total span {
+	position: absolute;
+	top: -20px;
+	right: -30px;
+	font-size: 20px;
+	margin-top: 0;
+	margin-bottom: auto;
+}
+
+.calculation-request__submit-sum-note {
+	font-family: FuturaBookC;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 27px;
+
+	color: #525466;	
+
+	margin-bottom: 40px;
+}
+
+.submit-container input {
+	border: none;
+	outline: none;
+
+	width: 290px;
+	min-height: 60px;
+
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	box-sizing: border-box;
+	border-radius: 100px;
+	padding-left: 35px;
+
+	color: #525466;
+
+	margin-bottom: 22px;
+}
+
+// .submit-container input:valid {
+// 	border: none;
+// }
+
+.submit-container input:invalid {
+	border: 2px solid rgba(250, 20, 20, 0.6);
+}
+
+.submit-container button {
+	width: 290px;
+	margin-bottom: 24px;
+}
+
+.calculation-request__disclaimer {
+	font-family: FuturaBookC;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 32px;
+	text-align: center;
+
+	color: #525466;	
+}
 
 @import '_media';

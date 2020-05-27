@@ -1,14 +1,16 @@
 //= templates/header.html
 <section class="intro">
-	<div class="container">
-		<div class="intro__columns columns">
-			<div class="intro__columns-left">
-				<h2 class="intro__title">Создаем <br><span>интернет-магазины</span><br> для бизнеса</h2>
-				<p class="intro__text">Комплексные решения эффективных интернет-магазинов с нуля. Больше 500 довольных клиентов из мира бизнеса</p>
-				<button class="button consultation-button">Бесплатная консультация</button>
-			</div>
-			<div class="intro__columns-right">
-				<img src="img/intro.svg" alt="Создаем интернет-магазины для бизнеса">
+	<div class="intro-wrapper">
+		<div class="container">
+			<div class="intro__columns columns">
+				<div class="intro__columns-left">
+					<h2 class="intro__title">Создаем <br><span>интернет-магазины</span><br> для бизнеса</h2>
+					<p class="intro__text">Комплексные решения эффективных интернет-магазинов с нуля. Больше 500 довольных клиентов из мира бизнеса</p>
+					<button class="button consultation-button">Бесплатная консультация</button>
+				</div>
+				<div class="intro__columns-right">
+					<img src="img/intro.svg" alt="Создаем интернет-магазины для бизнеса">
+				</div>
 			</div>
 		</div>
 	</div>
@@ -101,19 +103,21 @@
 <section class="consultation-request">
 	<div class="container">
 		<div class="consultation-request__columns columns">
-			<div class="consultation-request__columns-left">		
+			<div class="consultation-request__columns-left">
 				<h2 class="consultation-request__title section-title">Оставьте заявку</h2>
-				<span class="consultation-request__subtitle section-subtitle">Мы свяжемся с вами в ближайшее время</span>
+				<span class="consultation-request__subtitle section-subtitle">Мы свяжемся с вами <br>в ближайшее время</span>
 				<p class="consultation-request__text">Отправьте нам ваши контактные данные и наш менеджер перезвонит вам в течении 15 минут</p>
 				<form action="#" class="consultation-request__form" method="post">
-					<input type="text" title="Имя" placeholder="Имя">
-					<input type="text" pattern="(\+?\d[- .]*){7,13}" title="Телефон" placeholder="Телефон">
-					<input type="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" placeholder="Электронная почта">
-					<button class="button consultation-button" type="submit">Бесплатная консультация</button>
+					<div class="consultation-request__form-wrapper">
+						<input type="text" title="Имя" placeholder="Имя">
+						<input type="text" pattern="(\+?\d[- .]*){7,13}" title="Телефон" placeholder="Телефон" required>
+						<input type="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" placeholder="Электронная почта" required>
+						<button class="button consultation-button" type="submit">Бесплатная консультация</button>
+					</div>
 				</form>
 			</div>
 			<div class="consultation-request__columns-right">
-				<!-- <img src="img/consultation-request.svg" alt="Консультация"> -->
+				<img src="img/consultation-request.svg" alt="Консультация">
 			</div>
 		</div>
 	</div>
@@ -121,7 +125,11 @@
 <section class="portfolio">
 	<div class="container">
 		<h2 class="portfolio__title section-title">Наше портфолио</h2>
-		<span class="portfolio__subtitle section-subtitle">У нас уже более 50 успешно завершенных проектов</span>
+		<span class="portfolio__subtitle section-subtitle">У нас уже более 50 <br>успешно завершенных <br>проектов</span>
+		<div class="slider-controls">
+			<button class="slick-arrow portfolio__next-slide-button"><span>&gt;</span></button>
+			<button class="slick-arrow portfolio__prev-slide-button"><span>&lt;</span></button>
+		</div>
 	</div>
 	<div class="slider-container">
 		<div class="slider">
@@ -161,70 +169,74 @@
 <section class="calculation-request">
 	<div class="container">
 		<h2 class="calculation-request__title section-title">Оставьте заявку</h2>
-		<span class="calculation-request__subtitle section-subtitle">Рассчитать стоимость интернет-магазина онлайн</span>
+		<span class="calculation-request__subtitle section-subtitle">Рассчитать стоимость <br>интернет-магазина онлайн</span>
 		<form action="#" class="calculation-request__form" method="post">
 			<div class="calculation-request__columns columns">
 				<div class="calculation-request__columns-left">
 					<fieldset class="services-selection">
 						<legend>Вам нужен</legend>
-						<div>
-							<input type="radio" name="services" id="design" value="design" checked>
-							<label for="design">Дизайн с нуля</label>
-						</div>
-						<div>
-							<input type="radio" name="services" id="redesign" value="redesign">
-							<label for="redesign">Редизайн сайта</label>
-						</div>
-						<div>
-							<input type="radio" name="services" id="design-promotion" value="design-promotion">
-							<label for="design-promotion">Дизайн сайта + продвижение</label>
+						<div class="services-radio-group">
+							<div>
+								<input class="v-hidden" type="radio" name="services" id="design" value="design">
+								<label for="design">Дизайн с нуля</label>
+							</div>
+							<div>
+								<input class="v-hidden" type="radio" name="services" id="redesign" value="redesign">
+								<label for="redesign">Редизайн сайта</label>
+							</div>
+							<div>
+								<input class="v-hidden" type="radio" name="services" id="design-promotion" value="design-promotion">
+								<label for="design-promotion">Дизайн сайта + продвижение</label>
+							</div>
 						</div>
 					</fieldset>
 					<fieldset class="extra-functions-selection">
 						<legend>Дополнительные функции</legend>
-							<div>
-								<input type="checkbox" name="functions" id="check_1">
-								<label for="check_1">Оплата через сайт</label>
-							</div>
-							<div>
-								<input type="checkbox" name="functions" id="check_2">
-								<label for="check_2">Бонусная программа</label>
-							</div>
-							<div>
-								<input type="checkbox" name="functions" id="check_3">
-								<label for="check_3">Личный кабинет</label>
-							</div>
-							<div>
-								<input type="checkbox" name="functions" id="check_4">
-								<label for="check_4">SEO продвижение</label>
-							</div>
-							<div>
-								<input type="checkbox" name="functions" id="check_5">
-								<label for="check_5">Отзывы</label>
-							</div>
-							<div>
-								<input type="checkbox" name="functions" id="check_6">
-								<label for="check_6">Контекстная реклама</label>
-							</div>
-							<div>
-								<input type="checkbox" name="newsletter" id="check_7">
-								<label for="check_7">Оплата через сайт</label>
-							</div>
-							<div>
-								<input type="checkbox" name="newsletter" id="check_8">
-								<label for="check_8">Бонусная программа</label>
-							</div>
-							<div>
-								<input type="checkbox" name="newsletter" id="check_9">
-								<label for="check_9">Личный кабинет</label>
+							<div class="extra-functions-checkbox-group">
+								<div>
+									<input class="v-hidden" type="checkbox" name="functions" id="check_1">
+									<label for="check_1">Оплата через сайт</label>
+								</div>
+								<div>
+									<input class="v-hidden" type="checkbox" name="functions" id="check_2">
+									<label for="check_2">Бонусная программа</label>
+								</div>
+								<div>
+									<input class="v-hidden" type="checkbox" name="functions" id="check_3">
+									<label for="check_3">Личный кабинет</label>
+								</div>
+								<div>
+									<input class="v-hidden" type="checkbox" name="functions" id="check_4">
+									<label for="check_4">SEO продвижение</label>
+								</div>
+								<div>
+									<input class="v-hidden" type="checkbox" name="functions" id="check_5">
+									<label for="check_5">Отзывы</label>
+								</div>
+								<div>
+									<input class="v-hidden" type="checkbox" name="functions" id="check_6">
+									<label for="check_6">Контекстная реклама</label>
+								</div>
+								<div>
+									<input class="v-hidden" type="checkbox" name="newsletter" id="check_7">
+									<label for="check_7">Оплата через сайт</label>
+								</div>
+								<div>
+									<input class="v-hidden" type="checkbox" name="newsletter" id="check_8">
+									<label for="check_8">Бонусная программа</label>
+								</div>
+								<div>
+									<input class="v-hidden" type="checkbox" name="newsletter" id="check_9">
+									<label for="check_9">Личный кабинет</label>
+								</div>
 							</div>
 					</fieldset>
 				</div>
 
 				<div class="calculation-request__columns-right">
 					<div class="submit-container">
-						<span class="total">100 000</span>
-						<span>руб</span>
+						<span class="total">100 000<span>руб</span></span>
+						
 						<p class="calculation-request__submit-sum-note">
 							Примерная стоимость сайта включая проектрирование, дизайн, верстку и продвижение
 						</p>
