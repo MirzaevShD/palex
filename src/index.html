@@ -17,7 +17,7 @@
 </section>
 <section class="work-process">
 	<div class="container">
-		<h2 class="work-process__title section-title">Процесс работы</h2>
+		<h2 class="work-process__title section-title" id="work-process-anchor">Процесс работы</h2>
 		<span class="work-process__subtitle section-subtitle">Как мы создаем <br>интернет магазин</span>
 		<div class="work-process__slider">
 			<ul class="work-process__slides-list">
@@ -61,37 +61,37 @@
 
 			<ul class="work-process__slider-controls-list">
 				<li class="work-process__slider-controls-item">
-				  <a class="work-process__button work-process__button-active" href="#analytics">
+				  <a class="work-process__button work-process__button-active" href="#work-process-anchor">
 					<h3 class="work-process__carousel-item__title">Аналитика</h3>
 					<p class="work-process__carousel-item__text">Наша команда анализирует рынок, условия и ваших конкурентов</p>
 				  </a>
 				</li>
 				<li class="work-process__slider-controls-item">
-				  <a class="work-process__button" href="#prototypes">
+				  <a class="work-process__button" href="#work-process-anchor">
 					<h3 class="work-process__carousel-item__title">Прототипы</h3>
 					<p class="work-process__carousel-item__text">Наша команда анализирует рынок, условия и ваших конкурентов</p>
 				  </a>
 				</li>
 				<li class="work-process__slider-controls-item">
-				  <a class="work-process__button" href="#design">
+				  <a class="work-process__button" href="#work-process-anchor">
 					<h3 class="work-process__carousel-item__title">Дизайн</h3>
 					<p class="work-process__carousel-item__text">Наша команда анализирует рынок, условия и ваших конкурентов</p>
 				  </a>
 				</li>
 				<li class="work-process__slider-controls-item">
-				  <a class="work-process__button" href="#markup">
+				  <a class="work-process__button" href="#work-process-anchor">
 					<h3 class="work-process__carousel-item__title">Верстка</h3>
 					<p class="work-process__carousel-item__text">Наша команда анализирует рынок, условия и ваших конкурентов</p>
 				  </a>
 				</li>
 				<li class="work-process__slider-controls-item">
-				  <a class="work-process__button" href="#programming">
+				  <a class="work-process__button" href="#work-process-anchor">
 					<h3 class="work-process__carousel-item__title">Программинг</h3>
 					<p class="work-process__carousel-item__text">Наша команда анализирует рынок, условия и ваших конкурентов</p>
 				  </a>
 				</li>
 				<li class="work-process__slider-controls-item">
-				  <a class="work-process__button" href="#launch">
+				  <a class="work-process__button" href="#work-process-anchor">
 					<h3 class="work-process__carousel-item__title">Запуск</h3>
 					<p class="work-process__carousel-item__text">Наша команда анализирует рынок, условия и ваших конкурентов</p>
 				  </a>
@@ -196,16 +196,16 @@
 						<legend>Вам нужен</legend>
 						<div class="services-radio-group">
 							<div>
-								<input class="v-hidden" type="radio" name="services" id="design" value="design">
-								<label for="design">Дизайн с нуля</label>
+								<input class="v-hidden" type="radio" name="services" id="radio-design" value="radio-design">
+								<label for="radio-design">Дизайн с нуля</label>
 							</div>
 							<div>
-								<input class="v-hidden" type="radio" name="services" id="redesign" value="redesign">
-								<label for="redesign">Редизайн сайта</label>
+								<input class="v-hidden" type="radio" name="services" id="radio-redesign" value="radio-redesign">
+								<label for="radio-redesign">Редизайн сайта</label>
 							</div>
 							<div>
-								<input class="v-hidden" type="radio" name="services" id="design-promotion" value="design-promotion">
-								<label for="design-promotion">Дизайн сайта + продвижение</label>
+								<input class="v-hidden" type="radio" name="services" id="radio-design-promotion" value="radio-design-promotion">
+								<label for="radio-design-promotion">Дизайн сайта + продвижение</label>
 							</div>
 						</div>
 					</fieldset>
@@ -273,42 +273,42 @@
 	<div class="container">
 		<h2 class="about__title section-title">Узнайте больше о нас</h2>
 		<span class="about__subtitle section-subtitle">Часто задаваемые вопросы</span>
-		<div class="faq__wrapper">
+		<div class="faq__wrapper ">
 			<div class="faq__accordion">
-				<a href="#faq__q-1">
+				<a class="faq__expand-button" href="#faq__q-1">
 					<h3>Какая средняя цена интернет-магазина?</h3>
 				</a>
 				<p>
 					Дизайн, разработка и поддержка интернет-магазина и лендинга для компании Лексус. Разработка и поодержка интернет-магазина для компании Лексус. Дизайн, разработка и поддержка интернет-магазина и лендинга для компании Лексус. Разработка и поодержка интернет-магазина для компании Лексус.
 				</p>
 			</div>
-			<div class="faq__accordion">
-				<a href="#faq__q-1">
+			<div class="faq__accordion faq__accordion-collapsed">
+				<a class="faq__expand-button" href="#faq__q-1">
+					<h3>Какой срок разработки сайта?</h3>
+				</a>
+				<p>
+					Дизайн, разработка и поддержка интернет-магазина и лендинга для компании Лексус. Разработка и поодержка интернет-магазина для компании Лексус. Дизайн, разработка и поддержка интернет-магазина и лендинга для компании Лексус. Разработка и поодержка интернет-магазина для компании Лексус.
+				</p>
+			</div>
+			<div class="faq__accordion faq__accordion-collapsed">
+				<a class="faq__expand-button" href="#faq__q-1">
+					<h3>Какой срок разработки сайта?</h3>
+				</a>
+				<p>
+					Дизайн, разработка и поддержка интернет-магазина и лендинга для компании Лексус. Разработка и поодержка интернет-магазина для компании Лексус. Дизайн, разработка и поддержка интернет-магазина и лендинга для компании Лексус. Разработка и поодержка интернет-магазина для компании Лексус.
+				</p>
+			</div>
+			<div class="faq__accordion faq__accordion-collapsed">
+				<a class="faq__expand-button" href="#faq__q-1">
 					<h3>Какая средняя цена интернет-магазина?</h3>
 				</a>
 				<p>
 					Дизайн, разработка и поддержка интернет-магазина и лендинга для компании Лексус. Разработка и поодержка интернет-магазина для компании Лексус. Дизайн, разработка и поддержка интернет-магазина и лендинга для компании Лексус. Разработка и поодержка интернет-магазина для компании Лексус.
 				</p>
 			</div>
-			<div class="faq__accordion">
-				<a href="#faq__q-1">
-					<h3>Какая средняя цена интернет-магазина?</h3>
-				</a>
-				<p>
-					Дизайн, разработка и поддержка интернет-магазина и лендинга для компании Лексус. Разработка и поодержка интернет-магазина для компании Лексус. Дизайн, разработка и поддержка интернет-магазина и лендинга для компании Лексус. Разработка и поодержка интернет-магазина для компании Лексус.
-				</p>
-			</div>
-			<div class="faq__accordion">
-				<a href="#faq__q-1">
-					<h3>Какая средняя цена интернет-магазина?</h3>
-				</a>
-				<p>
-					Дизайн, разработка и поддержка интернет-магазина и лендинга для компании Лексус. Разработка и поодержка интернет-магазина для компании Лексус. Дизайн, разработка и поддержка интернет-магазина и лендинга для компании Лексус. Разработка и поодержка интернет-магазина для компании Лексус.
-				</p>
-			</div>
-			<div class="faq__accordion">
-				<a href="#faq__q-1">
-					<h3>Какая средняя цена интернет-магазина?</h3>
+			<div class="faq__accordion faq__accordion-collapsed">
+				<a class="faq__expand-button" href="#faq__q-1">
+					<h3>Какой срок разработки сайта?</h3>
 				</a>
 				<p>
 					Дизайн, разработка и поддержка интернет-магазина и лендинга для компании Лексус. Разработка и поодержка интернет-магазина для компании Лексус. Дизайн, разработка и поддержка интернет-магазина и лендинга для компании Лексус. Разработка и поодержка интернет-магазина для компании Лексус.
@@ -322,9 +322,9 @@
 		<h2 class="seo__title section-title">Продвижение</h2>
 		<span class="seo__subtitle section-subtitle">СЕО текст</span>
 		<div class="seo__text">
-			Интересует веб студия в Москве? Studio Palex Web – это команда ответственных и амбициозных профессионалов, чей успех зависит от успеха вашего будущего сайта. Каждый из сотрудников уже многого достиг, но не устал стремиться к лучшему. Собственный опыт работы в топовых веб-студиях России мы без лишних промедлений направим на решение ваших задач.
-			<br>Находясь в разных городах и странах, мы объединили наши усилия ради общей цели – создания и продвижения сайтов клиентов. Наша идея – перфекционизм. Веб компания Studio Palex Web существует, чтобы создавать лучший интеллектуальный продукт на рынке, оставаясь понятной и удобной для заказчиков.
-			<br>Мы увеличиваем скорость выполнения заказов и сокращаем цены, работая по системе SKRAM. Никаких лишних документов и расчетов. В живом общении истина рождается быстрее! Качественный продукт становится дешевле.
+			<p>Интересует веб студия в Москве? Studio Palex Web – это команда ответственных и амбициозных профессионалов, чей успех зависит от успеха вашего будущего сайта. Каждый из сотрудников уже многого достиг, но не устал стремиться к лучшему. Собственный опыт работы в топовых веб-студиях России мы без лишних промедлений направим на решение ваших задач.</p>
+			<p>Находясь в разных городах и странах, мы объединили наши усилия ради общей цели – создания и продвижения сайтов клиентов. Наша идея – перфекционизм. Веб компания Studio Palex Web существует, чтобы создавать лучший интеллектуальный продукт на рынке, оставаясь понятной и удобной для заказчиков.</p>
+			<p>Мы увеличиваем скорость выполнения заказов и сокращаем цены, работая по системе SKRAM. Никаких лишних документов и расчетов. В живом общении истина рождается быстрее! Качественный продукт становится дешевле.</p>
 		</div>
 	</div>
 </section>

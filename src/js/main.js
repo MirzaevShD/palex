@@ -27,16 +27,16 @@ $(document).ready(function () {
 	});    
 });
 
-var workProcessSlides = document.querySelectorAll('.work-process__slides-item');
-var workProcessControls = document.querySelectorAll('.work-process__button');
+let workProcessSlides = document.querySelectorAll('.work-process__slides-item');
+let workProcessControls = document.querySelectorAll('.work-process__button');
 
-for (var i = 0; i < workProcessControls.length; i++) {
+for (let i = 0; i < workProcessControls.length; i++) {
   (function (i) {
     workProcessControls[i].addEventListener('click', function (evt) {
       // evt.preventDefault();
 
 
-      for (var j = 0; j < workProcessSlides.length; j++) {
+      for (let j = 0; j < workProcessSlides.length; j++) {
         workProcessControls[j].classList.remove('work-process__button-active');
         workProcessSlides[j].classList.remove('work-process__slides-item-active');
       }
@@ -46,6 +46,14 @@ for (var i = 0; i < workProcessControls.length; i++) {
   })(i);
 }
 
+let faqToggleButtons = document.querySelectorAll('.faq__expand-button');
+let faqElements = document.querySelectorAll('.faq__accordion');
+
+for (let i = 0; i <= faqElements.length; i++) {
+  faqToggleButtons[i].onclick = function() {
+    faqElements[i].classList.toggle('faq__accordion-collapsed');
+  };
+}
 
 // leftMenu();
 
