@@ -4,17 +4,17 @@
 
 /*__Inspect__*/
 
-.insp-1 {
+.insp-r {
 	background-color: rgba(250, 50, 50, 0.1);
     box-shadow: inset 0px 0px 4px 2px  rgba(200, 50, 50, 0.2);	
 }
 
-.insp-2 {
+.insp-g {
 	background-color: rgba(50, 250, 50, 0.1);
     box-shadow: inset 0px 0px 4px 2px  rgba(50, 200, 50, 0.2);	
 }
 
-.insp-3 {
+.insp-b {
 	background-color: rgba(50, 50, 250, 0.1);
     box-shadow: inset 0px 0px 4px 2px  rgba(50, 50, 200, 0.2);	
 }
@@ -31,7 +31,7 @@ html {
 }
 
 body {
-	font-family: FuturaBookC;
+	font-family: FuturaBookC, sans-serif, Verdana;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 20px;
@@ -82,7 +82,7 @@ input[type="radio"].v-hidden {
 
 	vertical-align: middle;
 	text-align: center;
-	font-family: FuturaBookC, serif;
+	font-family: FuturaBookC, sans-serif, Verdana;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 18px;
@@ -105,20 +105,22 @@ input[type="radio"].v-hidden {
 	justify-content: space-between;
 	padding-top: 44px;
 
-	align-items: flex-end;
+	align-items: flex-start;
 	margin-bottom: 72px;
+
+	width: 100%;
 }
 
 .main-logo {
 	display: block;
 
-	font-family: Futura;
+	font-family: FuturisBold, sans-serif, Verdana;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 26px;
 	line-height: 35px;	
 	color: #71A5F4;
-	margin-right: 80px;
+	margin-right: 50px;
 	min-width: 155px;
 }
 
@@ -134,14 +136,22 @@ input[type="radio"].v-hidden {
 
 	margin: 0;
 	padding: 0;
+	width: 100%;
 
 	list-style: none;
 	margin-right: 58px;
 	flex-grow: 1;
+	margin-left: -10px;
 }
 
-.nav-services__item:not(:last-child) {
+.nav-main__list {
+	margin: 0;
+	padding: 0;
+}
+
+.nav-services__item {
 	// margin-right: 54px;
+	margin-left: 10px;
 }
 
 .nav-services__item a,
@@ -150,7 +160,7 @@ input[type="radio"].v-hidden {
 	font: inherit;
 	color: #525466;
 
-	font-family: FuturaBookC, serif;
+	font-family: FuturaBookC, sans-serif, Verdana;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 15px;
@@ -161,7 +171,7 @@ input[type="radio"].v-hidden {
 	font: inherit;
 	color: #525466;
 
-	font-family: Futura;
+	font-family: FuturisBold, sans-serif, Verdana;
 	font-style: normal;
 	font-weight: 500;
 	font-size: 20px;
@@ -493,7 +503,7 @@ input[type="radio"].v-hidden {
 	margin: 0;
 	padding: 0;
 
-	font-family: Futura;
+	font-family: FuturisBold, sans-serif, Verdana;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 24px;
@@ -506,7 +516,7 @@ input[type="radio"].v-hidden {
 	margin: 0;
 	padding: 0;
 
-	font-family: Futura;
+	font-family: FuturisBold, sans-serif, Verdana;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 38px;
@@ -549,7 +559,7 @@ input[type="radio"].v-hidden {
 }
 
 .intro__title {
-	font-family: Futura;
+	font-family: FuturisBold, sans-serif, Verdana;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 50px;
@@ -565,7 +575,7 @@ input[type="radio"].v-hidden {
 }
 
 .intro__text {
-	font-family: FuturaBookC;
+	font-family: FuturaBookC, sans-serif, Verdana;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 20px;
@@ -616,7 +626,7 @@ input[type="radio"].v-hidden {
 }
 
 .work-process__slides-item-title {
-	font-family: Futura;
+	font-family: FuturisBold, sans-serif, Verdana;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 24px;
@@ -626,7 +636,7 @@ input[type="radio"].v-hidden {
 }
 
 .work-process__slides-item-text {
-	font-family: FuturaBookC;
+	font-family: FuturaBookC, sans-serif, Verdana;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 20px;
@@ -682,7 +692,7 @@ input[type="radio"].v-hidden {
 	margin: 0;
 	padding: 0;
 
-	font-family: Futura;
+	font-family: FuturisBold, sans-serif, Verdana;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 20px;
@@ -709,7 +719,7 @@ input[type="radio"].v-hidden {
 }
 
 .work-process__carousel-item__text {
-	font-family: FuturaBookC;
+	font-family: FuturaBookC, sans-serif, Verdana;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 14px;
@@ -736,11 +746,12 @@ input[type="radio"].v-hidden {
 }
 
 .consultation-request__text {
-	font-family: FuturaBookC;
+	font-family: FuturaBookC, sans-serif, Verdana;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 20px;
 	line-height: 29px;
+	width: 480px;
 
 	color: #FFFFFF;	
 
@@ -888,7 +899,7 @@ input[type="radio"].v-hidden {
 }
 
 .calculation-request__columns-left legend {
-	font-family: Futura;
+	font-family: FuturisBold, sans-serif, Verdana;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 18px;
@@ -898,11 +909,10 @@ input[type="radio"].v-hidden {
 .services-radio-group,
 .extra-functions-checkbox-group {
 	display: flex;
-	justify-content: space-between;
 	flex-wrap: wrap;
 	flex-direction: row;
 
-	margin: -10px 0 75px 0;
+	margin: -10px 0 75px -5px;
 } 
 
 .extra-functions-checkbox-group {
@@ -918,7 +928,7 @@ input[type="radio"].v-hidden {
 	background-color: rgba(255, 255, 255, 0.1);
 	border-radius: 4px;
 
-	font-family: FuturaBookC;
+	font-family: FuturaBookC, sans-serif, Verdana;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 18px;
@@ -927,11 +937,11 @@ input[type="radio"].v-hidden {
 	text-align: center;
 	vertical-align: middle;
 	margin-top: 10px;
+	margin-left: 5px;
 }
 
 .extra-functions-checkbox-group label {
 	position: relative;
-	margin-right: 14px;
 	padding-left: 46px;
 }
 
@@ -1004,7 +1014,7 @@ input[type="radio"].v-hidden {
 
 .total {
 	position: relative;
-	font-family: Futura;
+	font-family: FuturisBold, sans-serif, Verdana;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 52px;
@@ -1018,14 +1028,14 @@ input[type="radio"].v-hidden {
 .total span {
 	position: absolute;
 	top: -20px;
-	right: -30px;
+	right: -35px;
 	font-size: 20px;
 	margin-top: 0;
 	margin-bottom: auto;
 }
 
 .calculation-request__submit-sum-note {
-	font-family: FuturaBookC;
+	font-family: FuturaBookC, sans-serif, Verdana;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 18px;
@@ -1057,9 +1067,9 @@ input[type="radio"].v-hidden {
 // 	border: none;
 // }
 
-.submit-container input:invalid {
-	border: 2px solid rgba(250, 20, 20, 0.6);
-}
+// .submit-container input:invalid {
+// 	border: 2px solid rgba(250, 20, 20, 0.6);
+// }
 
 .submit-container button {
 	width: 290px;
@@ -1067,14 +1077,53 @@ input[type="radio"].v-hidden {
 }
 
 .calculation-request__disclaimer {
-	font-family: FuturaBookC;
+	font-family: FuturaBookC, sans-serif, Verdana;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 32px;
 	text-align: center;
 
+	width: 270px;
+
 	color: #525466;	
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.about {
+	padding-top: 185px;
+	padding-bottom: 120px;
+}
+
+.about__title {
+	color: #71A5F4;
+}
+
+.about__subtitle {
+	color: #000000;
+	margin-bottom: 40px;
+}
+
+.faq__accordion h3 {
+	width: 100%;
+	min-height: 88px;
+
+	font-family: FuturaBookC, sans-serif, Verdana;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 29px;
+
+
+	color: #525466;
+
+	background-color: #FFFFFF;
+	box-shadow: 0px 12px 40px rgba(74, 78, 84, 0.1);
+	border-radius: 8px;
+
+	padding: 30px 50px 30px 35px;
+	vertical-align: middle;
 }
 
 @import '_media';

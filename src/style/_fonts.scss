@@ -1,13 +1,116 @@
 @font-face {
-  font-weight: 300;
-  font-family: "FuturaBookC";
+	font-family: "FuturaBookC";
 
-  src: url("");
+	src:	url("../fonts/FuturaBookC/FuturaBookC.eot");
+	src:	local("Futura Book Cyrillic"), local("FuturaBookC"),
+			url("../fonts/FuturaBookC/FuturaBookC.eot?#iefix") format("embedded-opentype"),
+			url("../fonts/FuturaBookC/FuturaBookC.woff") format("woff"),
+			url("../fonts/FuturaBookC/FuturaBookC.ttf") format("truetype");
+
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-  font-weight: 800;
-  font-family: "Futura";
+	font-family: "FuturaBookC";
 
-  src: url("");
+	src:	url("../fonts/FuturaBookC/FuturaBookC-Italic.eot");
+	src:	local("Futura Book Italic Cyrillic"), local("FuturaBookC-Italic"),
+			url("../fonts/FuturaBookC/FuturaBookC-Italic.eot?#iefix") format("embedded-opentype"),
+			url("../fonts/FuturaBookC/FuturaBookC-Italic.woff") format("woff"),
+			url("../fonts/FuturaBookC/FuturaBookC-Italic.ttf") format("truetype");
+
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "FuturaBookC";
+
+	src:	url("../fonts/FuturaBookC/FuturaDemiC.eot");
+	src:	local("Futura Demi Cyrillic"), local("FuturaDemiC"),
+			url("../fonts/FuturaBookC/FuturaDemiC.eot?#iefix") format("embedded-opentype"),
+			url("../fonts/FuturaBookC/FuturaDemiC.woff") format("woff"),
+			url("../fonts/FuturaBookC/FuturaDemiC.ttf") format("truetype");
+
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "FuturaBookC";
+
+	src:	url("../fonts/FuturaBookC/FuturaDemiC-Italic.eot");
+	src:	local("Futura Demi Italic Cyrillic"), local("FuturaDemiC-Italic"),
+			url("../fonts/FuturaBookC/FuturaDemiC-Italic.eot?#iefix") format("embedded-opentype"),
+			url("../fonts/FuturaBookC/FuturaDemiC-Italic.woff") format("woff"),
+			url("../fonts/FuturaBookC/FuturaDemiC-Italic.ttf") format("truetype");
+
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "FuturaBookC";
+
+	src:	url("../fonts/FuturaBookC/FuturaLightC.eot");
+	src:	local("Futura Light Cyrillic"), local("FuturaLightC"),
+			url("../fonts/FuturaBookC/FuturaLightC.eot?#iefix") format("embedded-opentype"),
+			url("../fonts/FuturaBookC/FuturaLightC.woff") format("woff"),
+			url("../fonts/FuturaBookC/FuturaLightC.ttf") format("truetype");
+
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "FuturaBookC";
+
+	src:	url("../fonts/FuturaBookC/FuturaLightC-Italic.eot");
+	src:	local("Futura Light Italic Cyrillic"), local("FuturaLightC-Italic"),
+			url("../fonts/FuturaBookC/FuturaLightC-Italic.eot?#iefix") format("embedded-opentype"),
+			url("../fonts/FuturaBookC/FuturaLightC-Italic.woff") format("woff"),
+			url("../fonts/FuturaBookC/FuturaLightC-Italic.ttf") format("truetype");
+
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "FuturaBookC";
+
+	src:	url("../fonts/FuturaBookC/FuturaMediumC.eot");
+	src:	local("Futura Medium Cyrillic"), local("FuturaMediumC"),
+			url("../fonts/FuturaBookC/FuturaMediumC.eot?#iefix") format("embedded-opentype"),
+			url("../fonts/FuturaBookC/FuturaMediumC.woff") format("woff"),
+			url("../fonts/FuturaBookC/FuturaMediumC.ttf") format("truetype");
+
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "FuturaBookC";
+
+	src:	url("../fonts/FuturaBookC/FuturaMediumC-Italic.eot");
+	src:	local("Futura Medium Italic Cyrillic"), local("FuturaMediumC-Italic"),
+			url("../fonts/FuturaBookC/FuturaMediumC-Italic.eot?#iefix") format("embedded-opentype"),
+			url("../fonts/FuturaBookC/FuturaMediumC-Italic.woff") format("woff"),
+			url("../fonts/FuturaBookC/FuturaMediumC-Italic.ttf") format("truetype");
+
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "FuturisBold";
+
+	src:	url("../fonts/FuturaBookC/FuturisBold.eot");
+	src:	local("Futura Medium Italic Cyrillic"), local("FuturisBold"),
+			url("../fonts/FuturaBookC/FuturisBold.eot?#iefix") format("embedded-opentype"),
+			url("../fonts/FuturaBookC/FuturisBold.woff") format("woff"),
+			url("../fonts/FuturaBookC/FuturisBold.ttf") format("truetype");
+
+	font-weight: 500;
+	font-style: italic;
 }
