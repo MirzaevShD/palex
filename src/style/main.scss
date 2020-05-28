@@ -835,32 +835,45 @@ input[type="radio"].v-hidden {
 	margin-bottom: 92px;
 	color: #000000;
 }
-
-.portfolio .slick__track {
-	
+.portfolio .slick-track {
+	display: flex;
+}
+.portfolio .slick-slide {
+	display: flex;
+    height: auto;
 }
 
-.portfolio .slider__item {
+.slider__item {
+	width: 1015px;
 	padding: 30px 25px;
 }
-
-.portfolio__slider-item {
+.portfolio__item {
+	height: 100%;
+	width: 100%;
+	box-shadow: 0px 12px 40px rgba(74, 78, 84, 0.13);
+	border-radius: 12px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	align-items: center;
+	padding: 50px;
 
-	width: 1015px;
-	height: 450px;
 
-	padding-top: 62px;
-	padding-left: 55px;
+	&-logo {
+		display: block;
+		height: 60px;
+		margin: 0 0 40px;
 
-	box-shadow: 0px 12px 40px rgba(74, 78, 84, 0.13);
-	border-radius: 12px;
-}
-
-.portfolio__item-text {
-	width: 345px;
+		&-img {
+			width: auto;
+			max-height: 100%;
+		}
+	}
+	&-text {
+		max-width: 345px;
+		min-height: 8.9em;
+		margin: 0 0 15px;
+	}
 }
 
 .slider-container {
