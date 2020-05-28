@@ -16,10 +16,12 @@ let $body,
 
 
 $(document).ready(function () {
-    $body = $('body');
+  $body = $('body');
+
 	$('.slider').slick({
-        centerMode: true,
-        variableWidth: true,
+    centerMode: true,
+    variableWidth: true,
+    adaptiveHeight: false,
 		nextArrow: $('.portfolio__next-slide-button'),
 		prevArrow: $('.portfolio__prev-slide-button')
 	});    
@@ -31,7 +33,9 @@ var workProcessControls = document.querySelectorAll('.work-process__button');
 for (var i = 0; i < workProcessControls.length; i++) {
   (function (i) {
     workProcessControls[i].addEventListener('click', function (evt) {
-      evt.preventDefault();
+      // evt.preventDefault();
+
+
       for (var j = 0; j < workProcessSlides.length; j++) {
         workProcessControls[j].classList.remove('work-process__button-active');
         workProcessSlides[j].classList.remove('work-process__slides-item-active');
